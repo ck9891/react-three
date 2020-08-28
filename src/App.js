@@ -67,9 +67,17 @@ function Scene() {
 
 function App() {
   return (
+    <>
+    <header style={{height: 'max-content', position: 'relative', zIndex: 9999}}>
+      <h1>Boxes</h1>
+      <p>Click me</p>
+      <p>Click and rotate me</p>
+      <p>Hold cmd and drag me</p>
+    </header>
     <Canvas>
       <Scene />
     </Canvas>
+    </>
   );
 }
 
